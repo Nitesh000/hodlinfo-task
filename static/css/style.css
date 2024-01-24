@@ -1,0 +1,97 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:200,300,400,500&family=Montserrat:400&display=swap);
+
+* {
+  --color-background: #191d28;
+  --color-teal: #14b8a6;
+  --color-tbody: #2e3241;
+  --color-gray: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
+body {
+  margin: 0;
+  font-family: Oswald, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--color-background);
+}
+
+select option {
+  width: 160px;
+  background: white;
+}
+
+.base-timer {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.base-timer__svg {
+  transform: scaleX(-1);
+}
+
+.base-timer__circle {
+  fill: none;
+  stroke: none;
+}
+
+.base-timer__path-elapsed {
+  stroke-width: 7px;
+  stroke: grey;
+}
+
+.base-timer__path-remaining {
+  stroke-width: 7px;
+  stroke-linecap: round;
+  transform: rotate(90deg);
+  transform-origin: center;
+  transition: 1s linear all;
+  fill-rule: nonzero;
+  stroke: currentColor;
+}
+
+.base-timer__path-remaining.green {
+  color: var(--color-teal);
+}
+
+.base-timer__path-remaining.orange {
+  color: orange;
+}
+
+.base-timer__path-remaining.red {
+  color: red;
+}
+
+.base-timer__label {
+  position: absolute;
+  top: 15%;
+  left: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+table {
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+  border-collapse: separate !important;
+  border-spacing: 0 1em;
+}
+
+table,
+th,
+td {
+  text-align: center;
+  height: 60px;
+  line-height: 1.2;
+}
+
+tbody tr {
+  background: var(--color-tbody);
+}
+
+tr {
+  margin-bottom: 20px;
+}

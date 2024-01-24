@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>HodlInfo Clone</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+<script src="https://kit.fontawesome.com/7ee8adc19f.js" crossorigin="anonymous"></script>
+  <script defer src="js/script.js"></script>
+  </head>
+  <body>
+
+<header class="mx-10">
+  <div class="grid grid-cols-3 gap-3 mt-10">
+    <div>
+      <img src="HODLINFO.png" alt="image of hodlinfo" class="w-2/3" />
+    </div>
+    <div class="flex gap-4 justify-center items-center">
+        <button class="py-1 pr-4 pl-4 rounded-md bg-gray-500/10">
+        <div>
+        <select id="currency"  class="appearance-none dark:text-white custom-select bg-inherit active:bg-gray-500/50" >
+          <option selected value="INR">INR</option>
+        </select>
+          <i class="dark:text-white fa-solid fa-caret-down fa-xs"></i>
+    </div>
+        </button>
+        <button class="py-1 pr-4 pl-4 bg-white rounded-md dark:bg-gray-500/10">
+        <div>
+        <select id="crypto"  class="appearance-none dark:text-white custom-select bg-inherit active:bg-gray-500/50" >
+          <option selected value="BTC">BTC</option>
+          <option selected value="ETH">ETH</option>
+          <option selected value="USDT">USDT</option>
+          <option selected value="XRP">XRP</option>
+          <option selected value="TRX">TRX</option>
+          <option selected value="DASH">DASH</option>
+          <option selected value="ZEC">ZEC</option>
+          <option selected value="XEM">XEM</option>
+          <option selected value="IOST">IOST</option>
+          <option selected value="WIN">WIN</option>
+          <option selected value="BTT">BTT</option>
+          <option selected value="WRX">WRX</option>
+        </select>
+          <i class="dark:text-white fa-solid fa-caret-down fa-xs"></i>
+    </div>
+        </button>
+        <button id="buy-btc" class="py-1 pr-4 pl-4 bg-white rounded-md dark:text-white dark:bg-gray-500/10">
+        BUY BTC
+        </button>
+    </div>
+    <div class="flex gap-4 justify-end items-center">
+<div id="timer" class="inline-block"></div>
+
+      <div class="py-1 px-4 text-white bg-teal-500 rounded-md">
+<i class="fa-solid fa-paper-plane fa-sm"></i>
+        Connect Telegram
+      </div>
+
+      <div class="inline-block flex gap-4 justify-end items-center">
+<label class="inline-flex relative items-center cursor-pointer me-5">
+  <input type="checkbox" value="" class="sr-only peer" checked>
+  <div class="w-11 h-6 bg-gray-200 rounded-full dark:bg-gray-700 dark:border-gray-600 peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border- after:absolute after:top-0.5 after:start-[2px] after:bg-teal-500 after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-inherit/40"></div>
+</label>
+      </div>
+    </div>
+  </div>
+</header>
